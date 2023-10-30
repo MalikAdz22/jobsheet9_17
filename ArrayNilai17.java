@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ArrayNilai17 {
     public static void main(String[] args) {
-        Scanner sc17 = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int[] nilaiAkhir = new int[10];
         for (int i = 0; i < nilaiAkhir.length; i++) {
@@ -12,9 +12,10 @@ public class ArrayNilai17 {
         }
         for (int i = 0; i < nilaiAkhir.length; i++){
             if (nilaiAkhir[i] > 70){
-
+                System.out.println("Mahasiswa ke-"+i+" lulus!");
+            } else {
+                System.out.println("Mahasiswa ke-"+i+" tidak Lulus!");
             }
-            System.out.println("Nilai akhir ke-" + i + " adalah " + nilaiAkhir[i]);
         }
     }
 }
